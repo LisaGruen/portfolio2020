@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap");
+*/* {
+  box-sizing: border-box;
+}*/
+
+body {
+  background: #faf9f2;
+  font-family: "Work Sans", sans-serif;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+a.logo {
+  margin-left: 2px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#gototopbtn {
+  display: none;
+  position: fixed;
+  /*width: 50px;
+  height: 50px;
+  bottom: 65px;
+  right: 35px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 100%;*/
+}
+
+/*#gototopbtn:hover {
+} */
+
+.toTopBtn {
+  position: fixed;
+  width: 60px;
+  height: auto;
+  bottom: 20px;
+  right: 20px;
+}
+
+/*header*/
+
+.header {
+  overflow: hidden;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  line-height: 50px;
+}
+
+.header a.logo {
+  font-size: 1.3rem;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.header a.active {
+  text-decoration: underline;
+}
+
+.header-right {
+  float: right;
+}
+
+/*sections*/
+
+#gallery {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+#about {
+  background-image: linear-gradient(#ffb4a0, #e5989b);
+  width: 100%;
+  height: auto;
+}
+#contact {
+  display: inline-block;
+  background-image: linear-gradient(#6a6876, #b4838f);
+  width: 100%;
+  height: 800px;
+}
+.textContact {
+  margin-top: 50vh;
+  text-align: center;
+  color: #e5989b;
+}
+/*grid*/
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 1em;
+}
+
+.containerUng {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 1em;
+  margin-bottom: 10px;
+}
+
+.containerAbout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(800px, auto);
+}
+
+.item {
+  position: relative;
+  max-width: 100%;
+  max-height: initial;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.containerAbout > img {
+  width: 60%;
+  height: auto;
+  margin-top: 8rem;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.textAbout {
+  margin-top: 8rem;
+  margin-right: 20px;
+}
+
+/*Image Gallery overlay*/
+#imgGallery {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: black;
+}
+
+.imgGallery:hover .overlay {
+  opacity: 0.2;
+}
+
+/*subpage*/
+/*
+.header-img {
+  width: 100%;
+  height: 400px;
+  margin-left: 60px;
+  margin-right: 60px;
+}*/
+.bgImg {
+  /* The image used */
+  background-image: url("images/TestBackground2.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+.bgImg2 {
+  /* The image used */
+  background-image: url("images/MockUps10.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+.bgImg3 {
+  /* The image used */
+  background-image: url("images/MockUps12.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+.containerSub {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1em;
+  grid-auto-rows: auto;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.text {
+  margin-top: 3rem;
+  margin-right: 20px;
+}
+
+/*Carousel Subpage*/
+.carousel {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.sliderText {
+  position: absolute;
+  font-size: 4rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.carousel:hover .slide:after,
+.carousel:hover .slide:before {
+  opacity: 1;
+}
+.slide {
+  float: right;
+  position: absolute;
+
+  /*width: 100%;
+  height: auto;*/
+
+  transition: opacity 0.4s;
+  opacity: 1;
+}
+.slide:before {
+  content: attr(annot);
+  display: block;
+  position: absolute;
+}
+.slide:after {
+  content: attr(slide);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: opacity 0.3s;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-image: linear-gradient(transparent, rgba(216, 35, 35, 0.5));
+}
+
+.faux-ui-facia {
+  top: 0;
+  right: 0;
+  float: right;
+  position: absolute;
+  margin-top: 0;
+  z-index: 9;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.faux-ui-facia:checked {
+  z-index: 8;
+}
+.faux-ui-facia:checked + .slide {
+  opacity: 0;
+}
+.faux-ui-facia:checked:nth-child(1):checked {
+  z-index: 9;
+}
+.faux-ui-facia:nth-child(1):checked {
+  float: left;
+  z-index: 9;
+}
+.faux-ui-facia:nth-child(1):checked + .slide {
+  opacity: 1;
+}
+.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia {
+  float: left;
+  z-index: 8;
+}
+.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia + .slide {
+  opacity: 0;
+}
+.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia:checked {
+  z-index: 9;
+}
+.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia:checked + .slide {
+  opacity: 1;
+}
+
+/*responsive*/
+@media screen and (max-width: 700px) {
+  .header a {
+    float: none;
+    text-align: left;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+
+  .header-right {
+    float: left;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+  }
+
+  .containerAbout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .containerAbout > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+  }
+
+  .textAbout {
+    margin-top: 1rem;
+  }
+  .containerSub {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    grid-auto-rows: auto;
+  }
+  .text {
+    margin-top: 1rem;
+    margin-right: 20px;
+  }
+}
