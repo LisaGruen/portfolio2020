@@ -24,6 +24,4 @@ function topFunction() {
 }
 
 //animated email
-Splitting({
-  whitespace: true,
-});
+
